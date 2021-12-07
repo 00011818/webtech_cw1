@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Evolution</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- HeaderSection - Start -->
+
+        <section id="header">
+
+            <!-- Navbar - Start -->
+
+            <nav class="navbar">
+                <section class="navbar__row">
+                    <div class="navbar__row__left">
+                        <div id="logo">
+                            <a href="#">
+                                <img src="images/logo/logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar__row__right">
+                        <div class="call__us">
+                            <div class="call__us__img">
+                                <svg width="35px" class="cs-top-header__links-icon" height="34px" viewBox="0 0 35 34" version="1.1" xmlns="http://www.w3.org/2000/svg"><path transform="translate(0, -6)" fill="#ff8200" d="M8.40272556,6.78830645 C9.70071404,8.57057343 11.2263969,10.8554968 12.97982,13.6431452 C13.4124828,14.3743316 13.3441686,15.2768764 12.7748754,16.3508065 C12.5927016,16.7163997 12.0461883,17.7331906 11.1353192,19.4012097 C11.3174931,19.6754046 11.5281284,19.96102 11.7672315,20.2580645 C12.0063347,20.555109 12.2625128,20.869286 12.5357735,21.2006048 C12.8090342,21.5319237 13.1050622,21.8689499 13.4238664,22.2116935 C13.7426706,22.5544372 14.0785486,22.9143126 14.4315104,23.2913306 C14.7844721,23.6683487 15.1545072,24.0510733 15.5416265,24.4395161 C17.5455386,26.4502789 19.2078498,27.9354791 20.52861,28.8951613 C22.0087723,28.0268774 23.022099,27.4556465 23.5686205,27.1814516 C24.1379137,26.8615575 24.6844269,26.7016129 25.2081767,26.7016129 C25.6180678,26.7016129 25.9710243,26.7930098 26.2670567,26.9758065 C28.2937405,28.2096836 30.5936505,29.7405823 33.1668557,31.5685484 C33.6222903,31.9341416 33.8955469,32.4139755 33.9866339,33.0080645 C34.054949,33.6250031 33.8613923,34.2876309 33.4059577,34.9959677 C33.2237839,35.2701627 32.8708274,35.7271473 32.3470776,36.3669355 C31.8688714,36.9610245 31.1458798,37.7150492 30.1780814,38.6290323 C29.210283,39.5430153 28.4189773,40 27.8041407,40 L27.7358258,40 C25.3903378,39.9086017 22.7830141,38.9832077 19.9137764,37.2237903 C17.0445387,35.4643729 13.9020874,32.8824095 10.4863282,29.4778226 C3.67758161,22.6229496 0.182173823,16.853518 0,12.1693548 C0,11.5524163 0.455427725,10.7412685 1.36629684,9.7358871 C2.25439422,8.77620488 2.99446428,8.05645401 3.5865292,7.5766129 C4.17859412,7.11962137 4.65679324,6.76545825 5.02114088,6.5141129 C5.49934716,6.17136925 6.05724613,6 6.69485451,6 C7.4235498,6 7.99283445,6.26276619 8.40272556,6.78830645 Z M6.21665061,8.19354839 C5.32855323,8.83333653 4.46324055,9.57593663 3.62068662,10.421371 C2.80090442,11.2439557 2.32270531,11.8494604 2.18607494,12.2379032 C2.36824876,16.350827 5.64163554,21.5947262 12.0063335,27.9697581 C18.3710314,34.3447899 23.6141431,37.6465042 27.7358258,37.875 C28.0774017,37.7379025 28.6580721,37.246644 29.4778543,36.4012097 C30.2976365,35.5557753 31.0377065,34.6760798 31.6980866,33.7620968 C31.7664018,33.6706985 31.8119446,33.5850138 31.8347163,33.5050403 C31.8574881,33.4250668 31.8574881,33.3508068 31.8347163,33.2822581 C29.2159676,31.4542919 27.0071432,29.9690917 25.2081767,28.8266129 C25.0260028,28.8266129 24.798289,28.8951606 24.5250282,29.0322581 C24.4339413,29.0779572 24.0695992,29.2836003 23.4319908,29.6491935 C22.7943824,30.0147868 22.1681693,30.3575253 21.5533326,30.6774194 L20.4261377,31.3629032 L19.2989428,30.608871 C17.864324,29.6263392 16.0995416,28.0611667 14.0045426,25.9133065 C11.9550871,23.833995 10.4180185,22.0631794 9.39329076,20.6008065 L8.57351266,19.5383065 L9.25666108,18.3387097 C10.099215,16.807788 10.6457283,15.8138464 10.8962173,15.3568548 C11.0328477,15.0826599 11.1011618,14.8541676 11.1011618,14.671371 C10.3269231,13.4374938 9.57546732,12.2664706 8.84677203,11.1582661 C8.11807674,10.0500617 7.42354946,9.01613383 6.76316935,8.05645161 L6.69485451,8.05645161 C6.51268068,8.05645161 6.35328098,8.10215008 6.21665061,8.19354839 Z"></path></svg>
+                            </div>
+                            <div class="call__us__info">
+                                <p>Call us:</p>
+                                <a href="tel:(224) 955-7788">
+                                    (224) 955-7788
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work__time">
+                            <div class="work__time__img">
+                                <svg width="36px" height="35px" class="cs-top-header__links-icon" viewBox="0 0 36 35" version="1.1" xmlns="http://www.w3.org/2000/svg"><path transform="translate(0, -6)" fill="#ff8200" d="M26.2841797,8.35839844 C28.9729952,9.90788535 31.0978112,12.0270048 32.6586914,14.7158203 C34.2195716,17.4046358 35,20.3326665 35,23.5 C35,26.6673335 34.2195716,29.5953642 32.6586914,32.2841797 C31.0978112,34.9729952 28.9729952,37.0978112 26.2841797,38.6586914 C23.5953642,40.2195716 20.6673335,41 17.5,41 C14.3326665,41 11.4046358,40.2195716 8.71582031,38.6586914 C6.02700479,37.0978112 3.90218879,34.9729952 2.34130859,32.2841797 C0.780428394,29.5953642 0,26.6673335 0,23.5 C0,20.3326665 0.780428394,17.4046358 2.34130859,14.7158203 C3.90218879,12.0270048 6.02700479,9.90218879 8.71582031,8.34130859 C11.4046358,6.78042839 14.3326665,6 17.5,6 C20.6673335,6 23.5953642,6.78612495 26.2841797,8.35839844 Z M17.5,38.8466797 C19.5735781,38.8466797 21.5559801,38.4422241 23.4472656,37.6333008 C25.3385511,36.8243775 26.9677666,35.7306384 28.3349609,34.3520508 C29.7021553,32.9734632 30.7901978,31.3385511 31.5991211,29.4472656 C32.4080444,27.5559801 32.8125,25.5735781 32.8125,23.5 C32.8125,21.4264219 32.4080444,19.4440199 31.5991211,17.5527344 C30.7901978,15.6614489 29.7021553,14.0322334 28.3349609,12.6650391 C26.9677666,11.2978447 25.3385511,10.2098022 23.4472656,9.40087891 C21.5559801,8.59195559 19.5735781,8.1875 17.5,8.1875 C15.4264219,8.1875 13.4440199,8.59195559 11.5527344,9.40087891 C9.66144888,10.2098022 8.0322334,11.2978447 6.66503906,12.6650391 C5.29784473,14.0322334 4.20980222,15.6614489 3.40087891,17.5527344 C2.59195559,19.4440199 2.1875,21.4264219 2.1875,23.5 C2.1875,25.1634198 2.44384509,26.7755456 2.95654297,28.3364258 C3.46924084,29.897306 4.19840022,31.3043557 5.14404297,32.5576172 C6.08968572,33.8108787 7.18912134,34.9160108 8.44238281,35.8730469 C9.69564429,36.8300829 11.102694,37.5649388 12.6635742,38.0776367 C14.2244544,38.5903346 15.8365802,38.8466797 17.5,38.8466797 Z M18.59375,23.0556641 L23.7548828,28.2167969 C23.959962,28.421876 24.0625,28.6782211 24.0625,28.9858398 C24.0625,29.2934586 23.959962,29.5555002 23.7548828,29.7719727 C23.5498037,29.9884451 23.2934586,30.0966797 22.9858398,30.0966797 C22.6782211,30.0966797 22.421876,29.9827485 22.2167969,29.7548828 L16.7822266,24.3544922 C16.7822266,24.3544922 16.77653,24.3430991 16.7651367,24.3203125 C16.7537434,24.2975259 16.7480469,24.2861328 16.7480469,24.2861328 C16.5201812,24.0810537 16.40625,23.819012 16.40625,23.5 L16.40625,12.5625 C16.40625,12.2662746 16.5144846,12.0099295 16.730957,11.793457 C16.9474295,11.5769846 17.2037746,11.46875 17.5,11.46875 C17.7962254,11.46875 18.0525705,11.5769846 18.269043,11.793457 C18.4855154,12.0099295 18.59375,12.2662746 18.59375,12.5625 L18.59375,23.0556641 Z"></path></svg>
+                            </div>
+                            <div class="work__time__info">
+                                <p>Mon - Fri : 8am - 9pm EST</p>
+                                <p>Sat - Sun : 9am - 6pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </nav>
+
+            <!-- Navbar - End -->
+
+            <!-- Header - Start -->
+
+
+            <header class="header">
+                <section class="header__content">
+                    <div class="header__content__left">
+                        <p>PROFESSIONAL AUTO TRANSPORTATION SERVICE</p>
+                        <h1>FAST & RELIABLE <br> AUTO TRANSPORT COMPANY</h1>
+                    </div>
+                    <div class="header__content__right">
+                        <form class="header__form">
+                            <div class="form__title">
+                                <h4>Start your free quote</h4>
+                            </div>
+                            <div class="form__content">
+                                <div class="form__group">
+                                    <select name="origin" id="origin__state" placeholder="* origin__state" required>
+                                        <option value="">Select state</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="AK">Alaska</option>
+                                        <option value="AZ">Arizona</option>
+                                        <option value="AR">Arkansas</option>
+                                        <option value="CA">California</option>
+                                        <option value="CO">Colorado</option>
+                                        <option value="CT">Connecticut</option>
+                                        <option value="DE">Delaware</option>
+                                        <option value="DC">Dist. of Columbia</option>
+                                        <option value="FL">Florida</option>
+                                        <option value="GA">Georgia</option>
+                                        <option value="GU">Guam</option>
+                                        <option value="HI">Hawaii</option>
+                                        <option value="ID">Idaho</option>
+                                        <option value="IL">Illinois</option>
+                                        <option value="IN">Indiana</option>
+                                        <option value="IA">Iowa</option>
+                                        <option value="KS">Kansas</option>
+                                        <option value="KY">Kentucky</option>
+                                        <option value="LA">Louisiana</option>
+                                        <option value="ME">Maine</option>
+                                        <option value="MD">Maryland</option>
+                                        <option value="MA">Massachusetts</option>
+                                        <option value="MI">Michigan</option>
+                                        <option value="MN">Minnesota</option>
+                                        <option value="MS">Mississippi</option>
+                                        <option value="MO">Missouri</option>
+                                        <option value="MT">Montana</option>
+                                        <option value="NE">Nebraska</option>
+                                        <option value="NV">Nevada</option>
+                                        <option value="NH">New Hampshire</option>
+                                        <option value="NJ">New Jersey</option>
+                                        <option value="NM">New Mexico</option>
+                                        <option value="NY">New York</option>
+                                        <option value="NC">North Carolina</option>
+                                        <option value="ND">North Dakota</option>
+                                        <option value="OH">Ohio</option>
+                                        <option value="OK">Oklahoma</option>
+                                        <option value="OR">Oregon</option>
+                                        <option value="PA">Pennsylvania</option>
+                                        <option value="PR">Puerto Rico</option>
+                                        <option value="RI">Rhode Island</option>
+                                        <option value="SC">South Carolina</option>
+                                        <option value="SD">South Dakota</option>
+                                        <option value="TN">Tennessee</option>
+                                        <option value="TX">Texas</option>
+                                        <option value="UT">Utah</option>
+                                        <option value="VT">Vermont</option>
+                                        <option value="VI">Virgin Islands</option>
+                                        <option value="VA">Virginia</option>
+                                        <option value="WA">Washington</option>
+                                        <option value="WV">West Virginia</option>
+                                        <option value="WI">Wisconsin</option>
+                                        <option value="WY">Wyoming</option>
+                                        <option value="CP">Canada-Province Not Specified</option>
+                                        <option value="AB">Canada-Alberta</option>
+                                        <option value="BC">Canada-British Columbia</option>
+                                        <option value="MB">Canada-Manitoba</option>
+                                        <option value="NB">Canada-New Brunswick</option>
+                                        <option value="NL">Canada-Newfoundland</option>
+                                        <option value="NT">Canada-Northwest Territories</option>
+                                        <option value="NS">Canada-Nova Scotia</option>
+                                        <option value="NU">Canada-Nunavut</option>
+                                        <option value="ON">Canada-Ontario</option>
+                                        <option value="PE">Canada-Prince Edward Island</option>
+                                        <option value="QC">Canada-Quebec</option>
+                                        <option value="SK">Canada-Saskatchewan</option>
+                                        <option value="YT">Canada-Yukon</option>
+                                    </select>
+                                </div>
+                                <div class="form__group">
+                                    <select name="destination" id="destination__sate" placeholder="Destination State" required>
+                                        <option value="">Select state</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="AK">Alaska</option>
+                                        <option value="AZ">Arizona</option>
+                                        <option value="AR">Arkansas</option>
+                                        <option value="CA">California</option>
+                                        <option value="CO">Colorado</option>
+                                        <option value="CT">Connecticut</option>
+                                        <option value="DE">Delaware</option>
+                                        <option value="DC">Dist. of Columbia</option>
+                                        <option value="FL">Florida</option>
+                                        <option value="GA">Georgia</option>
+                                        <option value="GU">Guam</option>
+                                        <option value="HI">Hawaii</option>
+                                        <option value="ID">Idaho</option>
+                                        <option value="IL">Illinois</option>
+                                        <option value="IN">Indiana</option>
+                                        <option value="IA">Iowa</option>
+                                        <option value="KS">Kansas</option>
+                                        <option value="KY">Kentucky</option>
+                                        <option value="LA">Louisiana</option>
+                                        <option value="ME">Maine</option>
+                                        <option value="MD">Maryland</option>
+                                        <option value="MA">Massachusetts</option>
+                                        <option value="MI">Michigan</option>
+                                        <option value="MN">Minnesota</option>
+                                        <option value="MS">Mississippi</option>
+                                        <option value="MO">Missouri</option>
+                                        <option value="MT">Montana</option>
+                                        <option value="NE">Nebraska</option>
+                                        <option value="NV">Nevada</option>
+                                        <option value="NH">New Hampshire</option>
+                                        <option value="NJ">New Jersey</option>
+                                        <option value="NM">New Mexico</option>
+                                        <option value="NY">New York</option>
+                                        <option value="NC">North Carolina</option>
+                                        <option value="ND">North Dakota</option>
+                                        <option value="OH">Ohio</option>
+                                        <option value="OK">Oklahoma</option>
+                                        <option value="OR">Oregon</option>
+                                        <option value="PA">Pennsylvania</option>
+                                        <option value="PR">Puerto Rico</option>
+                                        <option value="RI">Rhode Island</option>
+                                        <option value="SC">South Carolina</option>
+                                        <option value="SD">South Dakota</option>
+                                        <option value="TN">Tennessee</option>
+                                        <option value="TX">Texas</option>
+                                        <option value="UT">Utah</option>
+                                        <option value="VT">Vermont</option>
+                                        <option value="VI">Virgin Islands</option>
+                                        <option value="VA">Virginia</option>
+                                        <option value="WA">Washington</option>
+                                        <option value="WV">West Virginia</option>
+                                        <option value="WI">Wisconsin</option>
+                                        <option value="WY">Wyoming</option>
+                                        <option value="CP">Canada-Province Not Specified</option>
+                                        <option value="AB">Canada-Alberta</option>
+                                        <option value="BC">Canada-British Columbia</option>
+                                        <option value="MB">Canada-Manitoba</option>
+                                        <option value="NB">Canada-New Brunswick</option>
+                                        <option value="NL">Canada-Newfoundland</option>
+                                        <option value="NT">Canada-Northwest Territories</option>
+                                        <option value="NS">Canada-Nova Scotia</option>
+                                        <option value="NU">Canada-Nunavut</option>
+                                        <option value="ON">Canada-Ontario</option>
+                                        <option value="PE">Canada-Prince Edward Island</option>
+                                        <option value="QC">Canada-Quebec</option>
+                                        <option value="SK">Canada-Saskatchewan</option>
+                                        <option value="YT">Canada-Yukon</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn">
+                                    Sumbit now
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </header>
+
+            <!-- Header - End -->
+
+        </section>
+
+        <!-- Media-Form - Start -->
+
+        <section class="media__form">
+            <div class="header__content__right">
+                <form class="header__form">
+                    <div class="form__title">
+                        <h4>Start your free quote</h4>
+                    </div>
+                    <div class="form__content">
+                        <div class="form__group">
+                            <select name="origin" id="origin__state" placeholder="* origin__state" required>
+                                <option value="">Select state</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">Dist. of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="GU">Guam</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="PR">Puerto Rico</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VI">Virgin Islands</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                                <option value="CP">Canada-Province Not Specified</option>
+                                <option value="AB">Canada-Alberta</option>
+                                <option value="BC">Canada-British Columbia</option>
+                                <option value="MB">Canada-Manitoba</option>
+                                <option value="NB">Canada-New Brunswick</option>
+                                <option value="NL">Canada-Newfoundland</option>
+                                <option value="NT">Canada-Northwest Territories</option>
+                                <option value="NS">Canada-Nova Scotia</option>
+                                <option value="NU">Canada-Nunavut</option>
+                                <option value="ON">Canada-Ontario</option>
+                                <option value="PE">Canada-Prince Edward Island</option>
+                                <option value="QC">Canada-Quebec</option>
+                                <option value="SK">Canada-Saskatchewan</option>
+                                <option value="YT">Canada-Yukon</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <select name="destination" id="destination__sate" placeholder="Destination State" required>
+                                <option value="">Select state</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">Dist. of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="GU">Guam</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="PR">Puerto Rico</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VI">Virgin Islands</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                                <option value="CP">Canada-Province Not Specified</option>
+                                <option value="AB">Canada-Alberta</option>
+                                <option value="BC">Canada-British Columbia</option>
+                                <option value="MB">Canada-Manitoba</option>
+                                <option value="NB">Canada-New Brunswick</option>
+                                <option value="NL">Canada-Newfoundland</option>
+                                <option value="NT">Canada-Northwest Territories</option>
+                                <option value="NS">Canada-Nova Scotia</option>
+                                <option value="NU">Canada-Nunavut</option>
+                                <option value="ON">Canada-Ontario</option>
+                                <option value="PE">Canada-Prince Edward Island</option>
+                                <option value="QC">Canada-Quebec</option>
+                                <option value="SK">Canada-Saskatchewan</option>
+                                <option value="YT">Canada-Yukon</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn">
+                            Sumbit now
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Media-Form - Ens -->
+
+
+        <!-- HeaderSection - End -->
+
+
+        <!-- About-Us - Start -->
+
+        <div id="about__us">
+            <section>
+                <h3 class="section__title">ABOUT US</h3>
+                <h2 class="section__large__title">Your logistics <br> <span class="empty__text">solutions</span> provider</h2>
+                <div class="about__us__content">
+                    <div class="about__us__content__text">
+                        <p class="primary__text">
+                            Track//Truck, Inc. specializes in providing freight shipping solutions whenever and wherever you need them. As an independent freight agency, we have access to one of the largest logistics networks in the industry, which means your business has access to this vast network too.
+                        </p>
+                        <p class="primary__text">
+                            We are committed to providing our customers with quality service. We will work closely with you to develop the best logistics plan for your supply chain.
+                        </p>
+                        <p class="primary__text">
+                            In addition to our commitment to quality service, we are dedicated to safety. You can trust that Track//Truck, Inc. will keep your supply chain moving and get your freight delivered safely and on-time.
+                        </p>
+                    </div>
+                    <div class="about__us__content__img">
+                        <img src="/Images/About us/About_us.jpg" alt="about us">
+                        <div class="img__opacity"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About-Us - End -->
+
+        <!-- Services - Start -->
+
+        <div id="services">
+            <div class="how__it__works">
+                <div class="works__tab">
+                    <button id="defaultOpen" class="works__tab__button" onclick="openCity(event, '1')">
+                        <i class="fas fa-desktop"></i>
+                        <h4>STEP 1</h4>
+                        <p>Quote and book your order</p>
+                    </button>
+                    <button  class="works__tab__button" onclick="openCity(event, '2')">
+                        <i class="fas fa-car"></i>
+                        <h4>STEP 2</h4>
+                        <p>We pick up your vehicle</p>
+                    </button>
+                    <button class="works__tab__button" onclick="openCity(event, '3')">
+                        <i class="fas fa-check"></i>
+                        <h4>STEP 3</h4>
+                        <p>Receive your vehicle</p>
+                    </button>
+                </div>
+                <div class="works__content">
+                    <div class="works__content__info" id="1">
+                        <p>Click—or tap—here for an instant online quote in seconds (we’re talking finger-snapping fast!), or call or start a chat with one of our advisors. Then go ahead and compare our prices and services (we know you want to!)—we’re sure you’ll find our prices are very competitive.</p>
+                    </div>
+                    <div class="works__content__info" id="2">
+                        <p>Schedule your pickup date, time and an easy-to-access pickup location with your trucker. You can even release your car while you’re at work.</p>
+                    </div>
+                    <div class="works__content__info" id="3">
+                        <p>Reuniting you and your vehicle is an exciting moment—and one we look forward to at Montway! <br> Your trucker will call you when your vehicle is almost home so you can greet them both right at your own driveway (or a nearby agreed-upon location).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services - End -->
+
+        <!-- Why-Us - Start -->
+
+        <div id="why__us">
+            <section>
+                <h3 class="section__title">WHY CHOOSE US</h3>
+                <h2 class="section__large__title">Advantages & <br> <span class="empty__text">features</span></h2>
+
+                <div class="why__us__content">
+                    <div class="why__us__content__box box__bg__yellow">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="why__us__icon icon__color__black" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12.5 6.9c1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-.53.12-1.03.3-1.48.54l1.47 1.47c.41-.17.91-.27 1.51-.27zM5.33 4.06L4.06 5.33 7.5 8.77c0 2.08 1.56 3.21 3.91 3.91l3.51 3.51c-.34.48-1.05.91-2.42.91-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c.96-.18 1.82-.55 2.45-1.12l2.22 2.22 1.27-1.27L5.33 4.06z"></path></svg>
+                        <h6 class="box__title icon__color__black">Zero upfront payment</h6>
+                        <p class="box__text text__color__dgrey">You read that right, no upfront payment! The best auto transport companies charge you once the carrier has been dispatched for your car shipping order. So, you can book with your auto transport company now and not worry about the bill until later.</p>
+                    </div>
+                    <div class="why__us__content__box box__bg__grey">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="why__us__icon icon__color__yellow" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z"></path></svg>
+                        <h6 class="box__title icon__color__yellow">Insurance coverage</h6>
+                        <p class="box__text text__color__font">Car transport companies include insurance coverage in your shipping quote. Our selected auto haulers must meet insurance standards before qualifying to be part of our carrier network.</p>
+                    </div>
+                    <div class="why__us__content__box box__bg__yellow">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" class="why__us__icon icon__color__black" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M2.672 23.969c-.352-.089-.534-.234-1.471-1.168C.085 21.688.014 21.579.018 20.999c0-.645-.196-.414 3.368-3.986 3.6-3.608 3.415-3.451 4.064-3.449.302 0 .378.016.62.14l.277.14 1.744-1.744-.218-.343c-.425-.662-.825-1.629-1.006-2.429a7.657 7.657 0 0 1 1.479-6.44c2.49-3.12 6.959-3.812 10.26-1.588 1.812 1.218 2.99 3.099 3.328 5.314.07.467.07 1.579 0 2.074a7.554 7.554 0 0 1-2.205 4.402 6.712 6.712 0 0 1-1.943 1.401c-.959.483-1.775.71-2.881.803-1.573.131-3.32-.305-4.656-1.163l-.343-.218-1.744 1.744.14.28c.125.241.14.316.14.617.003.651.156.467-3.426 4.049-2.761 2.756-3.186 3.164-3.398 3.261-.271.125-.69.171-.945.106zM17.485 13.95a6.425 6.425 0 0 0 4.603-3.51c1.391-2.899.455-6.306-2.227-8.108-.638-.43-1.529-.794-2.367-.962-.581-.117-1.809-.104-2.414.025a6.593 6.593 0 0 0-2.452 1.064c-.444.315-1.177 1.048-1.487 1.487a6.384 6.384 0 0 0 .38 7.907 6.406 6.406 0 0 0 3.901 2.136c.509.078 1.542.058 2.065-.037zm-3.738 7.376a80.97 80.97 0 0 1-2.196-.651c-.025-.028 1.207-4.396 1.257-4.449.023-.026 4.242 1.152 4.414 1.236.062.026-.003.288-.525 2.102a398.513 398.513 0 0 0-.635 2.236c-.025.087-.069.156-.097.156-.028-.003-1.028-.287-2.219-.631zm2.912.524c0-.053 1.227-4.333 1.246-4.347.047-.034 4.324-1.23 4.341-1.211.019.019-1.199 4.337-1.23 4.36-.02.019-4.126 1.191-4.259 1.218-.054.011-.098 0-.098-.019zm-7.105-1.911c.846-.852 1.599-1.627 1.674-1.728.171-.218.405-.732.472-1.015.026-.118.053-.352.058-.522l.011-.307.182-.051c.103-.028.193-.044.202-.034.023.025-1.207 4.321-1.246 4.36-.02.016-.677.213-1.464.436l-1.425.405 1.537-1.542zm8.289-3.06a1.371 1.371 0 0 1-.059-.187l-.044-.156.156-.028c1.339-.227 2.776-.856 3.908-1.713.16-.125.252-.171.265-.134.054.165.272.95.265.959-.034.034-4.48 1.282-4.492 1.261zm-15.083-1.3c-.05-.039-1.179-3.866-1.264-4.29-.016-.084.146-.044 2.174.536 2.121.604 2.192.629 2.222.74.028.098.011.129-.125.223-.084.059-.769.724-1.523 1.479a63.877 63.877 0 0 1-1.39 1.367c-.016 0-.056-.025-.093-.054zm.821-4.378c-1.188-.343-2.164-.623-2.167-.626-.016-.012 1.261-4.433 1.285-4.46.022-.022 4.422 1.211 4.469 1.252.009.009-.269 1.017-.618 2.239-.576 2.02-.643 2.224-.723 2.22-.05-.003-1.059-.285-2.247-.626zm2.959.538c.012-.031.212-.723.444-1.534l.42-1.476.056.321c.093.556.265 1.188.464 1.741.106.296.187.539.181.545-.008.006-.332.101-.719.212-.389.109-.741.21-.786.224-.058.016-.075.006-.059-.034zM4.905 6.112c-1.187-.339-2.167-.635-2.18-.654-.04-.062-1.246-4.321-1.23-4.338.026-.025 4.31 1.204 4.351 1.246.047.051 1.28 4.379 1.246 4.376L4.91 6.113zm2.148-1.713l-.519-1.806-.078-.28 1.693-.483c.934-.265 1.724-.495 1.76-.508.034-.016-.083.14-.26.336A8.729 8.729 0 0 0 7.69 5.23a4.348 4.348 0 0 0-.132.561c0 .293-.115-.025-.505-1.39z"></path></svg>
+                        <h6 class="box__title icon__color__black">15K+ auto carriers</h6>
+                        <p class="box__text text__color__dgrey">Our auto transporter company has a huge network of haulers who are personally vetted auto shipping experts, ensuring your vehicle is transported by trusted members of the industry. These vehicle transport companies will treat your car like their own.</p>
+                    </div>
+                    <div class="why__us__content__box box__bg__grey">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="why__us__icon icon__color__yellow" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M496 224c-79.6 0-144 64.4-144 144s64.4 144 144 144 144-64.4 144-144-64.4-144-144-144zm64 150.3c0 5.3-4.4 9.7-9.7 9.7h-60.6c-5.3 0-9.7-4.4-9.7-9.7v-76.6c0-5.3 4.4-9.7 9.7-9.7h12.6c5.3 0 9.7 4.4 9.7 9.7V352h38.3c5.3 0 9.7 4.4 9.7 9.7v12.6zM320 368c0-27.8 6.7-54.1 18.2-77.5-8-1.5-16.2-2.5-24.6-2.5h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h347.1c-45.3-31.9-75.1-84.5-75.1-144zm-96-112c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128z"></path></svg>
+                        <h6 class="box__title icon__color__yellow">Extended hours</h6>
+                        <p class="box__text text__color__font">We are not just a 9 to 5 auto transport company. We’re here 365 days a year and work extended hours. We are always ready to answer your vehicle transportation questions or what makes us the best of all car moving companies.</p>
+                    </div>
+                    <div class="why__us__content__box box__bg__yellow">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="why__us__icon icon__color__black" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M383.9 308.3l23.9-62.6c4-10.5-3.7-21.7-15-21.7h-58.5c11-18.9 17.8-40.6 17.8-64v-.3c39.2-7.8 64-19.1 64-31.7 0-13.3-27.3-25.1-70.1-33-9.2-32.8-27-65.8-40.6-82.8-9.5-11.9-25.9-15.6-39.5-8.8l-27.6 13.8c-9 4.5-19.6 4.5-28.6 0L182.1 3.4c-13.6-6.8-30-3.1-39.5 8.8-13.5 17-31.4 50-40.6 82.8-42.7 7.9-70 19.7-70 33 0 12.6 24.8 23.9 64 31.7v.3c0 23.4 6.8 45.1 17.8 64H56.3c-11.5 0-19.2 11.7-14.7 22.3l25.8 60.2C27.3 329.8 0 372.7 0 422.4v44.8C0 491.9 20.1 512 44.8 512h358.4c24.7 0 44.8-20.1 44.8-44.8v-44.8c0-48.4-25.8-90.4-64.1-114.1zM176 480l-41.6-192 49.6 32 24 40-32 120zm96 0l-32-120 24-40 49.6-32L272 480zm41.7-298.5c-3.9 11.9-7 24.6-16.5 33.4-10.1 9.3-48 22.4-64-25-2.8-8.4-15.4-8.4-18.3 0-17 50.2-56 32.4-64 25-9.5-8.8-12.7-21.5-16.5-33.4-.8-2.5-6.3-5.7-6.3-5.8v-10.8c28.3 3.6 61 5.8 96 5.8s67.7-2.1 96-5.8v10.8c-.1.1-5.6 3.2-6.4 5.8z"></path></svg>
+                        <h6 class="box__title icon__color__black">Leave it to the pros</h6>
+                        <p class="box__text text__color__dgrey">We're a top-rated auto transport company, so your car will get from point A to point B without you having to break a single sweat. By having your car delivered straight to your door, you’re allowing the experts to handle every step of the process and ensure there are no speed bumps along the way.</p>
+                    </div>
+                    <div class="why__us__content__box box__bg__grey">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="why__us__icon icon__color__yellow" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M84.475 16.084L81.4 65.79 50.752 37.183l-11.68 11.68 30.043 32.19-52.877 3.266c41.824 51.46 65.345 68.355 119.215 67.81l22.322 23.915c3.147-3.24 6.332-6.474 9.555-9.697h.002c3.534-3.535 7.077-7.003 10.623-10.442l-23.404-21.844c6.066-54.95-22.426-79.39-70.075-117.978zM448.77 18.22c-.973-.014-1.966-.01-2.975.01-2.307.042-4.705.175-7.193.397-19.907 1.776-44.9 9.53-72.664 22.795C310.41 67.95 243.78 116.28 180.282 179.777 116.786 243.275 68.35 310.01 41.717 365.647 28.4 393.463 20.594 418.514 18.78 438.462c-1.81 19.948 2.155 34.023 10.974 42.842 8.82 8.818 22.896 12.783 42.844 10.97 19.948-1.812 44.997-9.62 72.814-22.935 47.236-22.612 102.476-60.954 156.942-110.875l-14.186-15.152c-2.085 1.93-4.17 3.864-6.248 5.757-8.912 6.327-17.464 11.443-25.21 15.15-8.84 4.233-16.638 6.57-22.19 7.073-5.55.504-8.082-.607-9.34-1.865-1.258-1.258-2.37-3.79-1.866-9.34.505-5.55 2.842-13.35 7.075-22.192 6.817-14.243 18.406-31.213 33.516-48.138l.108.115c2.182-2.53 4.395-5 6.64-7.412.345-.37.695-.73 1.04-1.097 1.232-1.275 2.48-2.548 3.75-3.816 20.78-20.78 42.63-36.552 60.273-44.98 8.82-4.215 16.598-6.536 22.133-7.03.69-.062 1.336-.1 1.937-.113.6-.014 1.16-.006 1.678.02 3.107.165 4.77 1.027 5.72 1.978 1.268 1.267 2.38 3.8 1.885 9.334-.493 5.534-2.813 13.31-7.027 22.133-3.854 8.065-9.26 17.015-15.96 26.337-.293.32-.596.64-.892.96l15.136 14.182c49.233-53.96 86.992-108.535 109.31-155.25 13.264-27.764 21.02-52.76 22.796-72.667 1.776-19.906-2.207-33.965-11.036-42.793-7.242-7.242-18.002-11.223-32.625-11.44zm-12.286 65.944c7.31-.162 13.042 1.596 16.9 5.453 18.066 18.068-9.964 77.3-65.58 147.06.42-8.303-1.506-16.573-7.406-22.472-4.734-4.733-10.992-6.91-17.57-7.367-2.192-.153-4.42-.114-6.64.084-8.873.792-18.358 3.923-28.528 8.78-20.34 9.718-43.39 26.586-65.43 48.628v.002c-22.044 22.044-38.948 45.126-48.7 65.496-4.874 10.185-8.02 19.683-8.827 28.568-.807 8.886.94 17.925 7.262 24.247 5.734 5.733 13.706 7.7 21.77 7.414-68.26 53.8-125.842 80.59-143.612 62.82C65.44 428.193 126.725 326.7 226.967 226.46c84.577-84.578 170.046-141.423 209.517-142.296zM252.95 225.902c-8.514 8.23-16.85 16.654-25.036 25.29l10.453 11.203c8.565-9.02 17.39-17.43 26.535-25.338l-11.95-11.155zm52.595 49.088c-10.287 8.657-19.75 18.025-28.715 28.615l25.016 26.803-.082.08 14.29 15.262.06-.055 37.995 40.707-73.872 23.692 211.117 81.55-81.552-211.12-22.65 70.634-39.66-37.017.093-.097-15.19-14.234c-.042.04-.084.083-.125.126l-26.725-24.946z"></path></svg>
+                        <h6 class="box__title icon__color__yellow">Personalized approach</h6>
+                        <p class="box__text text__color__font">Why choose our auto transport company? Montway Auto Transport works with you through every step of your car or truck’s move. Experience hassle-free shipping when you choose us as your car transporter and enjoy an easy and painless shipment process.</p>
+                    </div>
+                    <div class="why__us__content__box box__bg__yellow">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="why__us__icon icon__color__black" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M192 208c0-17.67-14.33-32-32-32h-16c-35.35 0-64 28.65-64 64v48c0 35.35 28.65 64 64 64h16c17.67 0 32-14.33 32-32V208zm176 144c35.35 0 64-28.65 64-64v-48c0-35.35-28.65-64-64-64h-16c-17.67 0-32 14.33-32 32v112c0 17.67 14.33 32 32 32h16zM256 0C113.18 0 4.58 118.83 0 256v16c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-16c0-114.69 93.31-208 208-208s208 93.31 208 208h-.12c.08 2.43.12 165.72.12 165.72 0 23.35-18.93 42.28-42.28 42.28H320c0-26.51-21.49-48-48-48h-32c-26.51 0-48 21.49-48 48s21.49 48 48 48h181.72c49.86 0 90.28-40.42 90.28-90.28V256C507.42 118.83 398.82 0 256 0z"></path></svg>
+                        <h6 class="box__title icon__color__black">Dedicated advisors</h6>
+                        <p class="box__text text__color__dgrey">Our professional auto transport company advisors work passionately to ensure you're working with the best vehicle transportation company. They will monitor your shipment around the clock.</p>
+                    </div>
+                    <div class="why__us__content__box box__bg__grey">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class=" why__us__icon icon__color__yellow" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3zM664.8 561.6l36.1 210.3L512 672.7 323.1 772l36.1-210.3-152.8-149L417.6 382 512 190.7 606.4 382l211.2 30.7-152.8 148.9z"></path></svg>
+                        <h6 class="box__title icon__color__yellow">The best company</h6>
+                        <p class="box__text text__color__font">Why do customers say Montway is the best company to ship a car? Check out our online reviews to see why we're widely considered one of the best car moving companies and car hauling companies in the business.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Why-Us - End -->
+
+        <!-- FAQ - Start -->
+
+        <div id="faq">
+            <section>
+                <div class="faq__contact">
+                    <form>
+                        <div class="form__title">
+                            <h4>Start your free quote</h4>
+                        </div>
+                        <div class="form__content">
+                            <div class="form__group">
+                                <input type="text" placeholder="Full Name">
+                            </div>
+                            <div class="form__group">
+                                <input type="email" placeholder="Email address">
+                            </div>
+                            <div class="form__group">
+                                <textarea placeholder="Description"></textarea>
+                            </div>
+                        </div>
+                        <button class="btn" type="submit">
+                            Submit now
+                        </button>
+                    </form>
+                </div>
+                <div class="faq__content">
+                    <h3>Frequently asked questions</h3>
+                    <div>
+                        <div class="faq__button">
+                            <button class="acc__button">How Much Does it Cost to Ship a Car?</button>
+                            <div class="faq__button__panel">
+                                <p>
+                                    The right quote is not always completely predictable. The cost ranges from around $495 to $1,300 on average to ship a sedan in running condition on an open carrier. Factors that may affect the cost includes, but are not limited to the distance, vehicle’s condition (operable/non-operable), size and how soon you want it shipped.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__button">
+                            <button class="acc__button">Do car shipping costs vary from state to state?</button>
+                            <div class="faq__button__panel">
+                                <p>
+                                    Vehicle shipments to California (CA), Florida (FL), New York (NY) and Texas (TX) are the most busy routes. Other states like Georgia (GA), Virginia (VA), Washington (WA), Massachusetts (MA), Ohio (OH), South Carolina (SC), North Carolina (NC), and Arizona (AZ) are also popular. The remaining states are less in demand and therefore have less carriers supporting those routes. Use our Rate Calculator to get an estimate on how much it will cost to ship your car.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__button">
+                            <button class="acc__button">Auto transport Carrier or Broker?</button>
+                            <div class="faq__button__panel">
+                                <p>
+                                    To ship a car without a broker is a calculated risk. The Auto Transport industry is regulated by using brokers to ensure that customers are not exploited by questionable Car Shipping Carriers. Auto Transport Brokers have been given the task to help and educate consumers to ensure that their carriers are licensed with the DOT and insured. Without a broker, consumers may run the risk of using an unreliable, uninsured and illegal carrier, which more often than not may leave one with a damaged vehicle and no form of recourse.                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__button">
+                            <button class="acc__button">Why should I ship my car with Evolution Auto Shipping?</button>
+                            <div class="faq__button__panel">
+                                <p>
+                                    The process of shipping your vehicle can be scary, to say the least. But, in reality, it is not as complicated as you might think. Your vehicle may be your second largest investment. Make sure you can trust your auto transport partner. Make sure your vehicle is clean. Consider gap Protection to ensure you are covered if damage is discovered. Take photographs before and after delivery. Make sure you receive an inspection sheet (Bill of Lading) at the pickup and delivery locations. Don't pay anything upfront until you have approved the carrier for pickup, Leave a review of your car shipping experience.                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- FAQ - End -->
+
+        <!-- Footer - Start -->
+
+        <footer id="footer">
+            <section>
+                <div class="footer__logo">
+                    <a href="#">
+                        <img src="Images/logo/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="footer__contact">
+                    <h4>CONTACT US</h4>
+                    <p>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"></path></svg>
+                        <span>
+                            1600 N. Milwaukee Ave. #1004 Vernon Hills, IL 60061
+                        </span>
+                    </p>
+                    <p>
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>
+                            <a href="tel:(224) 955-7788">(224) 955-7788</a>
+                        </span>
+                    </p>
+                    <p>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0 0 68.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z"></path></svg>
+                        <span>
+                            contact@evolutionautoshippinginc.com
+                        </span>
+                    </p>
+                </div>
+                <div class="footer__terms">
+                    <div class="footer__img"><img src="Images/footer__img/BBB.png" alt="bbb"></div>
+                    <div class="footer__img"><img src="Images/footer__img/transport-reviews.png" alt="transport__reviews"></div>
+                    <div class="footer__img"><img src="Images/footer__img/fmcsa-logo.png" alt="fmcsa-logo"></div>
+                </div>
+            </section>
+        </footer>
+
+        <!-- Footer - End -->
+
+        <script src="script/script.js"></script>
+
+    </div>
+</body>
+</html>
