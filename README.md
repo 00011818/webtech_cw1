@@ -19,8 +19,9 @@ such as:
 - width and height of the device 
 - orientation (is the tablet/phone in landscape or portrait mode). 
 
+links: 
+for git hub: https://github.com/00011818/webtech_cw1  
 
-
-
+for courese work web-site: https://trackevolution.netlify.app/ 
 
 
